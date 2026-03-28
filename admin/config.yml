@@ -8,16 +8,9 @@ public_folder: "/images/uploads"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "content/blogs"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "certificates"
-    label: "Certificates"
-    folder: "content/certificates"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
